@@ -1,0 +1,252 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(360deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.95);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+main {
+    background-image: url('/src/images/FUNDO_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 220vh;
+    margin: 0 10vh 0 10vh;
+}
+
+
+header {
+    background-color: #fff;
+    color: #1b5e20;
+    font-family: 'Poppins', sans-serif;
+    height: 37rem;
+}
+
+header h1 {
+    font-size: 7rem;
+    color: #105718;
+}
+
+header h1:hover {
+    animation: pulse 1s infinite;
+}
+
+#img-logo {
+    height: 5rem;
+    width: 5rem;
+    animation: rotate 2s ease-in 1;
+}
+
+.input-group {
+    max-width: 1200px;
+    width: 100%;
+}
+
+input#search {
+    border: 2px solid #ccc;
+    /* border-right: none; */
+    height: 4rem;
+    box-shadow: none;
+    font-size: 1rem;
+    width: 5.5rem;
+}
+
+button#search-button {
+    border: 1px solid #ccc;
+    height: 4rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #ccc !important;
+}
+
+button#search-button i {
+    font-size: 1.5rem;
+    color: #53a352;
+}
+
+.input-group-text {
+    border-radius: 0 80px 80px 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+
+.input-group-text i {
+    font-size: 1.5rem;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border-color: #1b5e20;
+}
+
+#card-container {
+    height: 150vh !important;
+}
+
+#character-grid {
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se ajustem na tela */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 2rem; /* Adiciona um espaçamento entre os cards */
+    margin: 0 auto !important;
+    width: 80%; /* Garante que a grid ocupe toda a largura disponível */
+}
+
+.col-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    width: 20vw;
+    margin-left: 10vh;
+
+}
+
+.card {
+    background-color: #222;
+    color: white;
+    border: 1px solid #4c9e4a;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 70vh;
+    width: 23vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    animation: fadeDown 1.5s ease-in-out;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+    font-size: 20px;
+    padding-right: 15rem;
+}
+
+#card-body {
+    margin-left: auto;
+}
+
+#location, #last-ep {
+    color: #858585;
+    font-size: 18px;
+}
+
+#prev-button, #next-button {
+    min-width: 120px;
+}
+
+
+footer {
+    background-color: #1c1c1c;
+    height: 50vh;
+}
+
+#footer-id {
+    background-color: #1c1c1c !important;
+}
+
+footer li {
+    color: #4c9e4a;
+    font-size: 24px;
+    margin-top: 5rem;
+}
+
+footer p {
+    margin-top: 20rem;
+    color: #4c9e4a;
+    font-size: 24px;
+}
+
+footer span {
+    color: #fff;
+}
+
+.modal-content {
+    background-color: #222;
+    color: white;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.status-alive {
+    background-color: green;
+}
+
+.status-dead {
+    background-color: red;
+}
+
+.status-unknown {
+    background-color: gray;
+}
+
+
+
