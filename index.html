@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="container-fluid text-center py-4 bg-white">
         <img src="./src/images/RICK_MORTY_ICON-01.svg" id="img-logo" alt="Rick and Morty Logo" class="mb-3 d-flex justify-content-end align-items-start">
         <h1 class="fw-bold mb-4">API de Rick and Morty</h1>
@@ -33,23 +32,16 @@
         </div>
     </header>
     
-    
-
-    <!-- Main Content -->
     <main class="container-fluid my-4">
-        <!-- Grid of Characters -->
         <div class="row g-0" id="character-grid">
-            <!-- Cards dynamically inserted here -->
         </div>
 
-        <!-- Pagination -->
         <div class="d-flex justify-content-center mt-4">
             <button id="prev-button" class="btn btn-secondary me-2" disabled>Anterior</button>
             <button id="next-button" class="btn btn-secondary">Próximo</button>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="container text-center py-5 text-light" id="footer-id">
         <ul class="list-unstyled d-flex justify-content-around">
             <li>PERSONAGENS: <span id="total-characters">826</span></li>
@@ -59,7 +51,6 @@
         <p> &copy; Desenvolvido por: <span class="fw-bold">Wesley Souza</span> em 2024</p>
     </footer>
 
-    <!-- Modal for Character Details -->
     <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -68,7 +59,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="modal-body">
-                    <!-- Details dynamically inserted here -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>

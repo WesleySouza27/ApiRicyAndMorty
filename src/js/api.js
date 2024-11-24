@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://rickandmortyapi.com/api/character";
+const API_BASE_URL = "https://rickandmortyapi.com/api/character"
 
 /**
  * Função para buscar personagens com base na página atual.
@@ -14,10 +14,10 @@ async function fetchCharacters(page = 1, name = "") {
                 name: name,
             },
         });
-        return response.data;
+        return response.data
     } catch (error) {
-        console.error("Erro ao buscar personagens:", error);
-        return null;
+        console.error("Erro ao buscar personagens:", error)
+        return null
     }
 }
 
@@ -28,10 +28,10 @@ async function fetchCharacters(page = 1, name = "") {
  */
 async function fetchCharacterDetails(id) {
     try {
-        const response = await axios.get(`${API_BASE_URL}/${id}`);
-        return response.data;
+        const response = await axios.get(`${API_BASE_URL}/${id}`)
+        return response.data
     } catch (error) {
-        console.error("Erro ao buscar detalhes do personagem:", error);
-        return null;
+        console.error("Erro ao buscar detalhes do personagem:", error)
+        return null
     }
 }

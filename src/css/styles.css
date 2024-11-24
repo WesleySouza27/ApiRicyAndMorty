@@ -88,7 +88,6 @@ header h1:hover {
 
 input#search {
     border: 2px solid #ccc;
-    /* border-right: none; */
     height: 4rem;
     box-shadow: none;
     font-size: 1rem;
@@ -133,11 +132,11 @@ input:focus {
 #character-grid {
     padding-top: 5vh;
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards se ajustem na tela */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 2rem; /* Adiciona um espaçamento entre os cards */
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem;
     margin: 0 auto !important;
-    width: 80%; /* Garante que a grid ocupe toda a largura disponível */
+    width: 80%;
 }
 
 .col-cards {
