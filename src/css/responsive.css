@@ -93,7 +93,7 @@
 
 @media (max-width: 633px) {
     main {
-        height: 200rem;
+        height: 235rem;
     }
 
     .card {
@@ -103,7 +103,7 @@
 
     .btn-primary {
         height: 5vh;
-        width: 18vw;
+        width: 25vw;
         font-size: 10px;
     }
 }
@@ -204,12 +204,18 @@
 
 @media (min-width: 1301px) and (max-width: 1849px) {
     .card h1 {
-        font-size: 26px;
+        font-size: 20px;
     }
     
+    .card img {
+        max-height: 300px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
     .card-text {
         font-size: 14px;
-        padding-right: 10rem;
+        padding-right: 3rem;
     }
     
     #card-body {
@@ -219,6 +225,12 @@
     #location, #last-ep {
         color: #858585;
         font-size: 16px;
+    }
+
+    .btn-primary {
+        height: 3vh;
+        width: 8vw;
+        font-size: 10px;
     }
 }
 
