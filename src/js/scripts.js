@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             const card = `
                 <div class="col-12 col-md-4 div-cards">
-                    <div class="card grid row-gap-5">
+                    <div class="card grid row-gap-2">
                         <img src="${character.image}" class="card-img-top" alt="${character.name}">
                         <div class="card-body">
                             <h1 class="card-title">
