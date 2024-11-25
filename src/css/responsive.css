@@ -163,12 +163,12 @@
     }
 
     .card h1 {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     
     .card-text {
-        font-size: 12px;
-        padding-right: 1rem;
+        font-size: 8px;
+        padding-right: 0rem;
     }
     
     #card-body {
@@ -176,8 +176,8 @@
     }
 
     .btn-primary {
-        height: 5vh;
-        width: 15vw;
+        height: 4vh;
+        width: 17vw;
         font-size: 10px;
     }
     
@@ -202,7 +202,7 @@
     }
 }
 
-@media (min-width: 1301px) and (max-width: 1799px) {
+@media (min-width: 1301px) and (max-width: 1849px) {
     .card h1 {
         font-size: 26px;
     }
@@ -222,7 +222,7 @@
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1850px) {
     body {
         font-family: 'Poppins', sans-serif;
         background-color: #1b1b1b;
@@ -234,7 +234,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 220vh;
+        height: 230vh;
         margin: 0 10vh 0 10vh;
     }
     
@@ -334,8 +334,8 @@
         border: 1px solid #4c9e4a;
         border-radius: 20px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 70vh;
-        width: 23vw;
+        height: 73vh;
+        width: 25vw;
         margin-top: 3vh;
         display: flex;
         flex-direction: column;
