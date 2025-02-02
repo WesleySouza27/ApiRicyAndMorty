@@ -94,16 +94,22 @@
 @media (max-width: 633px) {
     main {
         height: 235rem;
+        padding: 0;
     }
 
     .card {
-        height: 50vh;
-        width: 80vw;
+        height: 55vh;
+        width: 60vw;
+        margin: 0px 0px 10px 0px;
     }
 
     .btn-primary {
         height: 5vh;
         width: 25vw;
+        font-size: 10px;
+    }
+
+    footer li {
         font-size: 10px;
     }
 }
