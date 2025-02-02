@@ -1,4 +1,104 @@
-@media (max-width: 767px) {
+@media (max-width: 631px) {
+    main {
+        height: 235rem;
+        padding: 0;
+    }
+
+    .card {
+        height: 50vh;
+        width: 120%;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .btn-primary {
+        height: 6vh;
+        width: 25vw;
+        font-size: 10px;
+    }
+
+    footer li {
+        font-size: 10px;
+    }
+
+    header {
+        height: 15rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #img-logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    input#search {
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+
+    button#search-button {
+        border: 1px solid #ccc;
+        height: 3rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        background-color: #ccc !important;
+        font-size: 0.6rem;
+    }
+
+    #character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card img {
+        max-height: 200px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card h1 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    #card-body {
+        margin-left: auto;
+    }
+
+    
+
+    #location,
+    #last-ep {
+        color: #858585;
+        font-size: 18px;
+    }
+
+    #location,
+    #last-ep {
+        color: #858585;
+        font-size: 12px;
+    }
+
+    footer p {
+        margin-top: 10rem;
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (min-width: 632px) and (max-width: 767px) {
     header {
         height: 15rem;
     }
@@ -33,15 +133,14 @@
     }
 
     .card {
-        height: 60vh;
-        width: 100%;
+        height: 50vh;
+        width: 130%;
     }
     
     #character-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
-        padding: 2rem;
     }
 
     .card img {
@@ -88,29 +187,6 @@
     footer p {
         margin-top: 10rem;
         font-size: 16px;
-    }
-}
-
-@media (max-width: 633px) {
-    main {
-        height: 235rem;
-        padding: 0;
-    }
-
-    .card {
-        height: 60vh;
-        width: 70vw;
-        margin: 0px 0px 30px 0px;
-    }
-
-    .btn-primary {
-        height: 5vh;
-        width: 25vw;
-        font-size: 10px;
-    }
-
-    footer li {
-        font-size: 10px;
     }
 }
 
